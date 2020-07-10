@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server",
+    "prestart": "npm run build",
     "build": "node scripts/build"
   },
   "dependencies": {
