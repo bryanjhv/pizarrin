@@ -35,8 +35,10 @@
   });
 
   function redimensionar() {
+    const data = context.getImageData(0, 0, canvas.width, canvas.height);
     ancho = canvas.width = innerWidth;
     alto = canvas.height = innerHeight;
+    context.putImageData(data, 0, 0);
   }
   on(window, "resize", acelerar(redimensionar));
   redimensionar();
