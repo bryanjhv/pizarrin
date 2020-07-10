@@ -10,7 +10,9 @@ const io = SocketIO(server);
 app.use(express.static(path.join(__dirname, "public")));
 
 io.on("connection", (socket) => {
-  // TODO: Manejar conexión del cliente
+  socket.on("dibujo", (puntos) => {
+    socket.broadcast.emit("dibujo", puntos);
+  });
 });
 
 const { PORT = 3000 } = process.env;
