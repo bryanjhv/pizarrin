@@ -2,13 +2,19 @@
   "name": "pizarrin",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "build": "node scripts/build"
   },
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "buble": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^9.0.1",
+    "html-minifier": "^4.0.0"
+  },
   "engines": {
     "node": "12.x"
   },
