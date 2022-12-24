@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "buble": "^0.20.0",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.12",
     "fs-extra": "^9.0.1",
     "html-minifier": "^4.0.0",
     "onchange": "^7.0.2"
